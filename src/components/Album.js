@@ -89,7 +89,6 @@ class Album extends Component {
 
   handlePrevClick() {
      const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
-             console.log(currentIndex);
      const newIndex = Math.max(0, currentIndex - 1);
      const newSong = this.state.album.songs[newIndex];
      this.setSong(newSong);
@@ -98,7 +97,6 @@ class Album extends Component {
 
   handleNextClick() {
      const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
-             console.log(currentIndex);
      const newIndex = Math.max(0, currentIndex + 1);
      const newSong = this.state.album.songs[newIndex];
      this.setSong(newSong);
@@ -111,12 +109,29 @@ class Album extends Component {
       this.setState({ currentTime: newTime });
     }
 
+
   handleVolumeChange(e) {
     this.audioElement.currentVolume = e.target.value;
     this.setState({ currentVolume: e.target.value })
     this.audioElement.volume = e.target.value;
     this.setState({ volume: e.target.value })
  }
+
+ formatTime(e){
+     if (e){
+      const minutes = Math.floor(e / 60);
+      let seconds = Math.floor(e % 60);
+      seconds = ((seconds) < 10) ? ("0" + seconds) : (seconds);
+      console.log(minutes);
+      console.log(seconds);
+      console.log(" ");
+      const newTime = (minutes) + ":" + seconds;
+      return newTime;
+         } else {
+          return"-:--";
+         }
+  }
+
 
   render() {
     return (
@@ -153,7 +168,9 @@ class Album extends Component {
            isPlaying={this.state.isPlaying}
            currentSong={this.state.currentSong}
            currentTime={this.audioElement.currentTime}
-           duration={this.state.duration}
+           duration={this.audioElement.duration}
+           formatTime={this.formatTime(this.state.currentTime)}
+           formatDuration={this.formatTime(this.state.duration - this.state.currentTime)}
            currentVolume={this.state.currentVolume}
            volume={this.state.volume}
            handleSongClick={() => this.handleSongClick(this.state.currentSong)}
