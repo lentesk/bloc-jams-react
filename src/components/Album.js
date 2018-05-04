@@ -124,9 +124,6 @@ class Album extends Component {
       const minutes = Math.floor(e / 60);
       let seconds = Math.floor(e % 60);
       seconds = ((seconds) < 10) ? ("0" + seconds) : (seconds);
-      console.log(minutes);
-      console.log(seconds);
-      console.log(" ");
       const newTime = (minutes) + ":" + seconds;
       return newTime;
          } else {
@@ -158,7 +155,7 @@ class Album extends Component {
              <tr className="song" key={index} onClick={() => this.handleSongClick(songs)} >
              <td className="song-number">{index +1}</td>
              <td className="song-title">{songs.title}</td>
-             <td className="song-duration">{songs.duration}</td>
+             <td className="song-duration">{this.formatTime(songs.duration)}</td>
              <td className="ion-play"></td>
              <td className="ion-pause"></td>
             </tr>

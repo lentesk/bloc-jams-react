@@ -1,7 +1,11 @@
 import React from 'react';
 import './landing.css';
-import './InstantMessenger.scss'
 import { Route, Link } from 'react-router-dom';
+import InstantMessenger from './InstantMessenger.js';
+import './InstantMessenger.scss'
+import './InstantMessenger.css'
+
+
 
 
 const Landing = () => (
@@ -10,7 +14,9 @@ const Landing = () => (
 
   <section className="container">
     <div className="card">
-      <div className="aim">This is where the instant messenger will go</div>
+      <div className="aim">
+        <InstantMessenger/>
+      </div>
     </div>
     <div className="card">
       <div className="enterbutton">

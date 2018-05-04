@@ -29,6 +29,10 @@ body {
     height: 120px;
     width: 280px;
 }
+
+.aim {
+  max-width: 80px;
+}
 .pinkheader {
   background-color: #fde7f7;
   margin-left: 80px;

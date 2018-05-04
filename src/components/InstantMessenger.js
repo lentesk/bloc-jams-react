@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./InstantMessenger.scss"
 
 const Title = (props) => {
   const {chatName} = props;
@@ -101,7 +102,7 @@ const MessageForm = ({value, addedMessage, onChange}) => {
   );
 }
 let messageId = 0;
-class InstantMessenger extends React.Component {
+class InstantMessenger extends Component {
   constructor(props) {
     super(props);
     this.state = {
