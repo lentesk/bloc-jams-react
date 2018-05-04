@@ -9,21 +9,19 @@ import './InstantMessenger.css'
 
 
 const Landing = () => (
-  <section className="landing">
-    <h1 className="hero-title">Jameson Title</h1>
-
-  <section className="container">
-    <div className="card">
+<section className="landing">
+  <div className="container">
+    <div className="card1">
       <div className="aim">
         <InstantMessenger/>
       </div>
     </div>
-    <div className="card">
+    <div className="card2">
       <div className="enterbutton">
       <Link to='/library'><button className="enter"></button></Link>
       </div>
     </div>
-   </section>
+   </div>
    <div className="links">
    <a href="https://soundcloud.com/prodbyjameson">SoundCloud</a>
    <a href="https://prodbyjameson.bandcamp.com">Bandcamp</a>

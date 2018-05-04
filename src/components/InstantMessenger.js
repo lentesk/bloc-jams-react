@@ -16,13 +16,13 @@ const Title = (props) => {
 }
 const Navbar = ({chatName}) => {
   return (
-    <nav className="nav">
-      <ul className="nav__list">
-        <li className="nav__item">File</li>
-        <li className="nav__item">Edit</li>
-        <li className="nav__item">Insert</li>
+    <nav className="aimnav">
+      <ul className="aimnav__list">
+        <li className="aimnav__item">File</li>
+        <li className="aimnav__item">Edit</li>
+        <li className="aimnav__item">Insert</li>
       </ul>
-      <span className="nav__warning-level">{chatName}s Warning Level: 420%</span>
+      <span className="aimnav__warning-level">{chatName}s Warning Level: 420%</span>
     </nav>
   );
 }

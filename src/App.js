@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
       <header>
          <div className="pinkheader">
-          <nav>
+          <nav className = "appnav">
             <Link to='/'><span class="ion-planet"></span></Link>
             <Link to='/library'><span class="ion-navicon-round"></span></Link>
            </nav>

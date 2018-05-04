@@ -1,17 +1,19 @@
-.head,
-.body {
+html,
+body {
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Arial'; }
+  font-family: sans-serif; }
 
-.body {
+body {
   background: url("http://wallpapercave.com/wp/pBHbmte.jpg");
   background-size: cover;
   background-position: left center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+
+}
 
 button {
   cursor: pointer; }
@@ -69,19 +71,19 @@ button {
     .header__minimize:hover, .header__maximize:hover, .header__close:hover {
       cursor: pointer; }
 
-.nav {
+.aimnav {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .nav__list {
+  .aimnav__list {
     margin: 0;
     padding: 5px 0;
     list-style: none;
     display: flex; }
-  .nav__item {
+  .aimnav__item {
     padding: 0 5px;
     cursor: pointer; }
-  .nav__warning-level {
+  .aimnav__warning-level {
     padding-right: 5px; }
 
 .message-list {

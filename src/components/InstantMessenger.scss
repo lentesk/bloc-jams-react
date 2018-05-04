@@ -12,8 +12,8 @@
   border-bottom: 3px solid #848484;
 }
 
-.head,
-.body {
+html,
+body {
   position: relative;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@
   font-family: 'Arial';
 }
 
-.body {
+body {
   background: url('http://wallpapercave.com/wp/pBHbmte.jpg');
   background-size: cover;
   background-position: left center;
@@ -97,7 +97,7 @@ button {
   }
 }
 
-.nav {
+.aimnav {
   display: flex;
   align-items: center;
   justify-content: space-between;

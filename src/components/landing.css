@@ -14,7 +14,20 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding-bottom: 50px;
+  align-items: center;
 }
+
+.card1 {
+  display: flex;
+  align-self: flex-start;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 
 .links {
   display: flex;
@@ -31,7 +44,8 @@ body {
 }
 
 .aim {
-  max-width: 80px;
+  display: flex;
+  align-self: flex-start;
 }
 .pinkheader {
   background-color: #fde7f7;

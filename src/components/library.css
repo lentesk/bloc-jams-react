@@ -1,6 +1,6 @@
 body {
     background-image: url("./floralbackground.jpg");
-    background-size:cover;
+    background-size: 100% 100%;
 }
 
 .library {
@@ -17,6 +17,6 @@ body {
 }
 
 img {
-  max-width:95%;
-  padding-bottom: 15px;
+  max-width:80%;
+  padding-bottom: 2px;
 }
