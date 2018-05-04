@@ -1,23 +1,28 @@
 import React from 'react';
+import './landing.css';
+import './InstantMessenger.scss'
+import { Route, Link } from 'react-router-dom';
+
 
 const Landing = () => (
   <section className="landing">
-    <h1 className="hero-title">Turn the music up!</h1>
+    <h1 className="hero-title">Jameson Title</h1>
 
-  <section className="selling-points">
-    <div className="point">
-      <h2 className="point-title">Choose your music</h2>
-      <p className="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
+  <section className="container">
+    <div className="card">
+      <div className="aim">This is where the instant messenger will go</div>
     </div>
-    <div className="point">
-      <h2 className="point-title">Unlimited, streaming, ad-free</h2>
-      <p className="point-description">No arbitrary limits. No distractions.</p>
-    </div>
-    <div className="point">
-      <h2 className="point-title">Mobile enabled</h2>
-      <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
+    <div className="card">
+      <div className="enterbutton">
+      <Link to='/library'><button className="enter"></button></Link>
+      </div>
     </div>
    </section>
+   <div className="links">
+   <a href="https://soundcloud.com/prodbyjameson">SoundCloud</a>
+   <a href="https://prodbyjameson.bandcamp.com">Bandcamp</a>
+   <a href="https://www.instagram.com/prodbyjameson/">Instagram</a>
+   </div>
   </section>
 );
 

@@ -1,0 +1,25 @@
+.album{
+  background-color: #fde7f7;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.song-list {
+  display: flex;
+  justify-content: center;
+}
+
+.song-number-column {
+
+}
+
+.song-title {
+  display: flex;
+  justify-content: flex-start;
+}

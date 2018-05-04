@@ -1,0 +1,71 @@
+.ion-skip-backward {
+      -webkit-appearance: none;
+      background-color: #EABFCB; /* Green */
+      border: none;
+      color: black;
+      padding: 7.5px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 13px;
+
+}
+
+.ion-pause {
+  -webkit-appearance: none;
+  background-color: #EABFCB; /* Green */
+  border: none;
+  color: black;
+  padding: 5px 10.6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 13px;
+
+}
+
+.ion-play {
+  -webkit-appearance: none;
+  background-color: #EABFCB; /* Green */
+  border: none;
+  color: black;
+  padding: 5px 10.6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 2px;
+  border-radius: 13px;
+}
+
+.ion-skip-forward {
+  -webkit-appearance: none;
+  background-color: #EABFCB; /* Green */
+  border: none;
+  color: black;
+  padding: 7.5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 13px;
+
+}
+
+.seek-bar {
+-webkit-appearance: none;  /* Override default CSS styles */
+ appearance: none;
+ width: 100%; /* Full-width */
+ height: 10px; /* Specified height */
+ border-radius: 5px;
+ background: #d3d3d3; /* Grey background */
+ opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+ -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+ transition: opacity .2s;
+}
+
+.seek-bar:hover {
+    opacity: 3;
+}

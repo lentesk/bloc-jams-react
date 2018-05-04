@@ -1,0 +1,41 @@
+body {
+    background-image: url("./floralbackground.jpg");
+    background-size:cover;
+}
+
+.landing {
+  background-color: #fde7f7;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.enter {
+    background-image: url( 'https://www.dropbox.com/s/ddtmefc6yqz5x68/enter.png?dl=1' );
+    background-size: 280px 120px;
+    height: 120px;
+    width: 280px;
+}
+.pinkheader {
+  background-color: #fde7f7;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+}
+
+.hero-title {
+  margin-top: 0px;
+}

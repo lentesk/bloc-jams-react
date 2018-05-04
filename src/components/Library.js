@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
+import './library.css';
+import './jamesonlogo.png'
+
+
 
 class Library extends Component {
   constructor(props) {

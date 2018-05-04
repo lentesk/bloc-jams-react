@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Fenice"
 }
 
 .App-logo {
@@ -22,7 +23,38 @@
   font-size: large;
 }
 
+.pinkheader {
+  background-color: #fde7f7;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  color: #F6316A;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 60px;
+}
+
+.ion-planet {
+  padding-right: 10px;
+}
+
+a:visited{
+  color:#F6316A
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@font-face {
+     font-family: 'Fenice';
+     src: url("./FeniceStd-Oblique.otf");
+     font-weight: normal;
+   }
