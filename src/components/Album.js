@@ -22,6 +22,8 @@ class Album extends Component {
       isPlaying: false,
       currentVolume: 0.8,
       volume: 0.8,
+      isPlaying: false,
+      isHovered: false,
     };
 
     this.audioElement = document.createElement('audio');
@@ -31,6 +33,11 @@ class Album extends Component {
   play() {
     this.audioElement.play();
     this.setState({ isPlaying: true });
+  }
+
+  pause() {
+    this.audioElement.pause();
+    this.setState({ isPlaying: false });
   }
 
   componentDidMount() {
@@ -65,12 +72,6 @@ class Album extends Component {
 
     }
 
-
-
-  pause() {
-    this.audioElement.pause();
-    this.setState({ isPlaying: false });
-  }
 
   setSong(song) {
     if (song !== undefined) {
@@ -152,12 +153,23 @@ class Album extends Component {
            <tbody className ="songs">
            {
           this.state.album.songs.map( (songs, index) =>
-             <tr className="song" key={index} onClick={() => this.handleSongClick(songs)} >
-             <td className="song-number">{index +1}</td>
+             <tr className="song" key={index}
+               onClick={() => this.handleSongClick(songs)}
+               onMouseEnter={() => this.setState({isHovered: index + 1})}
+               onMouseLeave={() => this.setState({isHovered: false})} >
+             <td className="song-actions">
+              {(this.state.isPlaying) ?
+                <span> {(this.state.currentSong.title === songs.title) ?
+                  <span class="ion-pause"></span>
+                  :<span>{index + 1 + "."}</span>}</span>
+                  :
+                  (this.state.isHovered === index+1) ?
+                    <span class="ion-play"></span>
+                  :<span className="song-number">{index + 1 + "."}</span>
+                }
+                </td>
              <td className="song-title">{songs.title}</td>
              <td className="song-duration">{this.formatTime(songs.duration)}</td>
-             <td className="ion-play"></td>
-             <td className="ion-pause"></td>
             </tr>
           )
         }

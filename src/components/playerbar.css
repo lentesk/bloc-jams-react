@@ -1,20 +1,20 @@
-.ion-skip-backward {
+button {
       -webkit-appearance: none;
-      background-color: #EABFCB; /* Green */
+      background-color: #EABFCB;
       border: none;
       color: black;
-      padding: 7.5px 16px;
+      padding: 3.75px 8px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
-      border-radius: 13px;
+      font-size: 8x;
+      border-radius: 1px;
+      margin-right: 2px;
 
 }
 
-.ion-pause {
-  -webkit-appearance: none;
-  background-color: #EABFCB; /* Green */
+.play-pause {
+  background-color: #EABFCB;
   border: none;
   color: black;
   padding: 5px 10.6px;
@@ -26,9 +26,8 @@
 
 }
 
-.ion-play {
-  -webkit-appearance: none;
-  background-color: #EABFCB; /* Green */
+.play {
+  background-color: #EABFCB;
   border: none;
   color: black;
   padding: 5px 10.6px;
@@ -40,9 +39,8 @@
   border-radius: 13px;
 }
 
-.ion-skip-forward {
-  -webkit-appearance: none;
-  background-color: #EABFCB; /* Green */
+.next {
+  background-color: #EABFCB;
   border: none;
   color: black;
   padding: 7.5px 16px;
@@ -53,6 +51,7 @@
   border-radius: 13px;
 
 }
+
 
 .seek-bar {
 -webkit-appearance: none;  /* Override default CSS styles */

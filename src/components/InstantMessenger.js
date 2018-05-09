@@ -37,7 +37,7 @@ const MessageItem = ({message, screenName, className}) => {
 }
 const MessageList = (props) => {
   const { messageData, screenName, chatName } = props;
-  const currentMessage = { text: "What's gucci my dude? Plz enjoy my tuneskis", id: 1 };
+  const currentMessage = { text: "What's gucci my dude? Plz enjoy my tuneskis ~~", id: 1 };
   return (
     <div className="message-list">
       <div className="message-list__container">
